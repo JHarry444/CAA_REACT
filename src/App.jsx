@@ -5,6 +5,7 @@ import './App.css'
 import FirstComponent from './components/FirstComponent'
 import Input from './components/Input';
 import Trainer from './components/Trainer'
+import ConditionalRendering from './components/ConditionalRendering'
 function App() {
 
   const a = 1;
@@ -19,7 +20,7 @@ function App() {
       <FirstComponent />
       <FirstComponent />
       <FirstComponent />
-      <input className='myClass' onChange={e => console.log("Value:", e.target.value)} />
+      <input className='myClass' onChange={e => console.log("Value:", e.target.value)} required/>
       <button onClick={handleClick}>CLICK ME</button>
       <Input />
       <p>a + b = {a + b}</p>
@@ -28,7 +29,7 @@ function App() {
       <Trainer name="Shafeeq" age={40} specialty="Oracle" />
       <Trainer />
       <Trainer />
-
+      <ConditionalRendering/>
     </>
   )
 }
