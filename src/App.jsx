@@ -6,6 +6,7 @@ import FirstComponent from './components/FirstComponent'
 import Input from './components/Input';
 import Trainer from './components/Trainer'
 import ConditionalRendering from './components/ConditionalRendering'
+import ExternalData from './components/ExternalData'
 function App() {
 
   const a = 1;
@@ -30,6 +31,7 @@ function App() {
       <Trainer />
       <Trainer />
       <ConditionalRendering/>
+      <ExternalData/>
     </>
   )
 }
